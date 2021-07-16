@@ -1,8 +1,6 @@
-const changeBudgetAmount = (budgetAmount) => {
+export const changeBudgetAmount = (budgetAmount) => {
     return {
         type: 'changeBudgetAmount',
         data: budgetAmount
     }
 }
-
-export default changeBudgetAmount
