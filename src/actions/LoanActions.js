@@ -10,4 +10,3 @@ export const approveLoan = () => {
         type: 'approveLoan'
     }
 }
-

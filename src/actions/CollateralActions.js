@@ -1,12 +1,15 @@
-export const changeCollateralAmount = (collateralAmount) => {
+const changeCollateralAmount = (collateralAmount) => {
     return {
         type: 'changeCollateralAmount',
         data: collateralAmount
     }
 }
 
-export const verifyCollateral = () => {
+const verifyCollateral = () => {
     return {
         type: 'verifyCollateral',
     }
 }
+
+export default changeCollateralAmount;
+export default verifyCollateral;

@@ -3,7 +3,7 @@ let collateral = {
     verified: false
 }
 
-export const CollateralReducer = (state = collateral, action) => {
+const CollateralReducer = (state = collateral, action) => {
     switch (action.type) {
         case "changeCollateralAmount":
             state.value = action.data
@@ -11,6 +11,8 @@ export const CollateralReducer = (state = collateral, action) => {
         case "verifyCollateral":
             state.verified = true
             return state
-        default: state
+        default: return state
     }
 }
+
+export default CollateralReducer;
