@@ -4,7 +4,7 @@ let loan = {
     amount: 0
 }
 
-export const LoanReducer = (state = loan, action) => {
+const LoanReducer = (state = loan, action) => {
     switch (action.type) {
         case "changeLoanAmount":
             state.amount = action.data
@@ -12,6 +12,8 @@ export const LoanReducer = (state = loan, action) => {
         case "approveLoan":
             state.approved = true
             return state
-        default: state
+        default: return state
     }
 }
+
+export default LoanReducer;
