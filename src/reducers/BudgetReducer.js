@@ -4,8 +4,8 @@ let budget = {
 
 const BudgetReducer = (state = budget, action) => {
     switch (action.type) {
-        case "changeBudgetAmount":
-            state.amount = action.data
+        case "budget/changeBudgetAmount":
+            state.amount = action.payload
             return state
         default: return state
     }

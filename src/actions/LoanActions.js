@@ -1,12 +1,12 @@
 export const changeLoanAmount = (loanAmount) => {
     return {
-        type: 'changeLoanAmount',
-        data: loanAmount
+        type: 'loan/changeLoanAmount',
+        payload: loanAmount
     }
 }
 
 export const approveLoan = () => {
     return {
-        type: 'approveLoan'
+        type: 'loan/approveLoan'
     }
 }

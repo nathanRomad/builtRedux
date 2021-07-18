@@ -6,10 +6,10 @@ let loan = {
 
 const LoanReducer = (state = loan, action) => {
     switch (action.type) {
-        case "changeLoanAmount":
-            state.amount = action.data
+        case "loan/changeLoanAmount":
+            state.amount = action.payload
             return state
-        case "approveLoan":
+        case "loan/approveLoan":
             state.approved = true
             return state
         default: return state
