@@ -1,15 +1,33 @@
-class LoanApproval extends React.Component {
+import React, { Component } from 'react'
+// import { useSelector, useDispatch } from 'react-redux'
+// import { changeLoanAmount } from './actions/LoanActions'
+// import { FunctionalComponent } from './components/functionalComponent'
+
+class Summary extends React.Component {
+  constructor(props) {
+        super(props);
+        this.state= {
+          property: 'value'
+        }
+  // const dispatch = useDispatch()
+  // const loan = useSelector(state => state.loanReducer)
+  // dispatch(changeLoanAmount(100))
 
 
-    render() {
-      return <h2></h2>;
-    }
-  }
-  
+render() {
+  return
+  <>
+    <h1>Company Name: {loan.companyName} </h1>
+    <div>Loan Amount: {loan.amount}</div>
+    <div>Loan Approval: {loan.approved.toString()}</div>;
+  </>
+}
+}
+
   // To write a class component:
   // First import the Component class from "react" package:
   // import React,{Component} from "react"
-  //   The steps are as follows:
+  // The steps are as follows:
   // Car/Garage simply inherits from the React.Component class.
   // The render() method is called to display the element into the browser. 
   // render() is essentially a lifecycle method.
@@ -40,7 +58,7 @@ class LoanApproval extends React.Component {
   //     return <h2>I am a Car!</h2>;
   //   }
   // }
-  
+
   // class Garage extends React.Component {
   //   render() {
   //     return (
@@ -51,5 +69,5 @@ class LoanApproval extends React.Component {
   //     );
   //   }
   // }
-  
+
   // ReactDOM.render(<Garage />, document.getElementById('root'));
